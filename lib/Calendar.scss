@@ -1,4 +1,82 @@
 .calendar
 {
-	border: 1px solid red;
+	position: absolute;
+	width: 300px;
+
+	border: 10px solid #999;
+	text-align: center;
+	line-height: 1.5rem;
+
+	background: #fff;
+	
+	.calendar-month
+	{
+		display: flex;
+		.prev
+		{
+			order: 1; 
+			flex: 1;
+		}
+		.next
+		{
+			order: 3; 
+			flex: 1;
+		}
+		.month
+		{
+			order: 2; 
+			flex: 5;
+			background: #aaa;
+			color: #fff;
+		}
+	}
+
+	.calendar-weekdays
+	{
+		display: flex;
+		.weekday
+		{
+			flex: 1;
+		}
+		.w0, 
+		.w6
+		{
+			background: #bbb;
+			color: #fff;
+		}
+	}
+
+	.calendar-days
+	{
+		display: flex;
+		flex-wrap: wrap;
+		.day
+		{
+			width: 14.28571428571429%;
+
+			&.w1, 
+			&.w2, 
+			&.w3, 
+			&.w4, 
+			&.w5  
+			{
+				background: #eee;
+			}
+
+			&.disabled
+			{
+				color: #bbb;
+			}
+			&.today
+			{
+				background: #aaa;
+				color: #fff;
+			}
+			&.selected
+			{
+				background: dodgerblue;
+				color: #fff;
+			}
+		}
+	}
 }
