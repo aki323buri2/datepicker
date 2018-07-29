@@ -1,5 +1,9 @@
 .calendar
 {
+	&:not(.active)
+	{
+		display: none;
+	}
 	position: absolute;
 	width: 300px;
 
