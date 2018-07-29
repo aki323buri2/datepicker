@@ -1,0 +1,27 @@
+$invalid-color: tomato !default;
+.dateinput
+{
+	.input 
+	{
+		&:not(.valid)
+		{
+			color: $invalid-color;
+			background: rgba($invalid-color, .3);  
+			border-color: $invalid-color;
+		}
+	}
+
+}
+.linked
+{
+	cursor: pointer;
+	&.icon > i 
+	{
+		pointer-events: auto;
+	}
+	:hover
+	{
+		opacity: .5;
+		transition: .5s;
+	}
+}

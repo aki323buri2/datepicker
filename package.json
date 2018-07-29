@@ -45,6 +45,10 @@
     "bulma-extensions": "*",
     "@fortawesome/fontawesome-free": "*",
     "redux-saga-app": "file:../redux-saga-app",
-    "dom-polyfill": "file:../dom-polyfill"
+    "dom-polyfill": "file:../dom-polyfill",
+    "moment": "*",
+    "numeral": "*",
+    "filesize": "*",
+    "classnames": "*"
   }
 }

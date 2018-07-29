@@ -1,7 +1,7 @@
 import './App.scss';
 import React from 'react';
 import { connect } from 'react-redux';
-import Starter from '../lib/Starter';
+import Datepicker from '../lib/Datepicker';
 @connect(state => state)
 export default class App extends React.Component
 {
@@ -11,16 +11,16 @@ export default class App extends React.Component
 	}
 	render()
 	{
-		const { starter } = this.props;
+		const { day } = this.props;
 		return (
-			<div className="app">
+			<div className="app content is-small">
 				
 				<div className="field">
-					<div className="field-title">すたあたあ : </div>
+					<div className="field-title">日付 : </div>
 					<div className="field-body">
-						<Starter
-							value={starter}
-							onChange={value => this.action('STARTER', value)}
+						<Datepicker
+							day={day}
+							onChange={day => this.action('DAY', day)}
 						/>
 					</div>
 				</div>

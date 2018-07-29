@@ -1,5 +1,5 @@
-import starterReducers from '../lib/starterReducers';
+import datepickerReducers from '../lib/datepickerReducers';
 export const reducers = {
-	...starterReducers,  
+	...datepickerReducers,  
 };
 export default reducers;
