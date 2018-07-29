@@ -16,7 +16,7 @@ module.exports = {
 			'[name].css', 
 		), 
 		new HtmlWebpackPlugin({
-			title: 'starter', 
+			title: 'datepicker', 
 		}), 
 		/*
 		new CleanWebpackPlugin([

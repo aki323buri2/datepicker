@@ -1,9 +1,9 @@
-# [project-name]
+# datepicker
 
 ```bash
-git clone /path/to/[project-name].git
+git clone /path/to/datepicker.git
 
-cd [project-name]
+cd datepicker
 npm install
 npx webpack
 npx webpack --watch -d
