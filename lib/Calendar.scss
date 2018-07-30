@@ -1,5 +1,6 @@
 .calendar
 {
+	z-index: 99;
 	&:not(.active)
 	{
 		display: none;

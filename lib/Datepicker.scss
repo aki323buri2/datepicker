@@ -2,6 +2,7 @@
 {
 	.overlay
 	{
+		z-index: 100;
 		&:not(.active)
 		{
 			display: none;
